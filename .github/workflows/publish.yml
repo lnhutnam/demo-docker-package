@@ -11,7 +11,7 @@ with:
 registry: ghcr.io
 username: ${{ github.actor }}
 password: ${{ secrets.GITHUB_TOKEN }}
-- name: Build the hello-docker Docker image
+- name: Build the hello-docker Docker image Pytorch
 run: |
        docker build . --tag ghcr.io/lnhutnam/demo-docker-package:latest
        docker run ghcr.io/lnhutnam/demo-docker-package:latest
